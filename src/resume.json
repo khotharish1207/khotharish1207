@@ -1,0 +1,117 @@
+{
+  "basics": {
+    "name": "Harish Shridhar Khot ",
+    "label": "Senior software Engineer",
+    "picture": "images/harish.jpeg",
+    "x_pictureFallback": "https://media-exp1.licdn.com/dms/image/C4E03AQGTwmTmf2J4SQ/profile-displayphoto-shrink_100_100/0/1610712383570?e=1616025600&v=beta&t=oi5ACTjFXTEeLlkPDooXwZot_FP2fY9Dxo_fP8sPxTI",
+    "x_title": "Hey There! Glad you're here",
+    "summary": "Going on 5+ years of experience in IT. Currently I’m working as a senior software developer exploring the UI world. I’m interested in developing and deploying front-end applications.",
+    "location": {
+      "country": "India",
+      "countryCode": "Maharashtra",
+      "region": "Pune"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Harish Khot",
+        "url": "https://www.linkedin.com/in/harish-khot-7a3524101",
+        "x_icon": "fab fa-2x fa-linkedin"
+      },
+      {
+        "network": "GitHub",
+        "username": "khotharish1207",
+        "url": "https://github.com/khotharish1207",
+        "x_icon": "fab fa-2x fa-github"
+      },
+      {
+        "network": "Stackoverflow",
+        "username": "harish",
+        "url": "https://stackoverflow.com/users/6325973/harish",
+        "x_icon": "fab fa-2x fa-stack-overflow"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "SAS",
+      "position": "Senior Software Engineer",
+      "startDate": "2019-06-18",
+      "endDate": "",
+      "summary": "I am working Front-end developer with openUI5, React JS framework. I am also part of devops team, responsible for managing shared cluster",
+      "highlights": []
+    },
+    {
+      "company": "Capgemini",
+      "position": "Associate Consultant",
+      "startDate": "2018-01-18",
+      "endDate": "2019-06-17",
+      "summary": "I was working as Front-end developer. I am part of UI design and development team. We are using React, redux, React-intl, styled-Components for development and Jest, enzyme for unit testing.",
+      "highlights": ["HSBC"]
+    },
+    {
+      "company": "Tudip Technologies",
+      "position": "Software Developer",
+      "website": "https://tudip.com/",
+      "startDate": "2015-12-10",
+      "endDate": "2018-01-15",
+      "summary": "I worked as a full stack developer. I have worked on the development of REST api using NodeJs (Express) in backend and ReactJs(Flux and Redux) on front-end side. Written unit test cases using Mocha, Chai, Jasmine test suits.",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Madeira",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2011-09-15",
+      "endDate": "2019-06-07",
+      "courses": [
+        "Object Oriented Programming",
+        "Database Management Systems",
+        "Operating systems and computers architectures",
+        "Requirements Engineering"
+      ]
+    }
+  ],
+  "skills": {
+    "softwareDevelopement": [
+      "Javascript",
+      "NodeJs (Express)",
+      "ReactJs (Flux, Redux, Saga)",
+      "Styled-components",
+      "MongoDb",
+      "HTML",
+      "CSS",
+      "LESS",
+      "Typescript",
+      "ES6",
+      "Openui 5",
+      "Core Java"
+    ],
+    "devOps": [
+      "Kubernetes (Basic)",
+      "Docker (Basic)",
+      "NPM",
+      "Grunt",
+      "Gulp",
+      "Webpack"
+    ],
+    "testing": ["Jest", "Enzymes", "Jasmin", "Karma", "Mocha", "Chai"],
+    "toolsAndTechnologies": ["Git", "Eclipse", "Webstorm", "VS-code"]
+  },
+  "interests": [
+    {
+      "name": "Travel bug",
+      "x_icon": "fa-globe-africa"
+    },
+    {
+      "name": "Foodie",
+      "x_icon": "fa-utensils"
+    },
+    {
+      "name": "Live in the now",
+      "x_icon": "fa-brain"
+    }
+  ]
+}
