@@ -1,10 +1,13 @@
 import React from "react";
 import Badge from "../elements/Badge";
 import Resume from "../../resume.json";
+import getTheme from "../../themeUtil";
+
+const theme = getTheme();
 
 function AboutMe() {
   return (
-    <section className="section has-background-link" id="aboutMe">
+    <section className={`section ${theme.backgroundClass}`} id="aboutMe">
       <div className="container has-text-centered">
         <figure className="image container is-180x180">
           <img
@@ -19,10 +22,10 @@ function AboutMe() {
             }}
           />
         </figure>
-        <p className="subtitle is-4 has-text-white has-text-weight-bold">
+        <p className={`subtitle is-4 ${theme.text1} has-text-weight-bold`}>
           {Resume.basics.x_title}
         </p>
-        <p className="subtitle is-5 has-text-white has-text-weight-light summary-text">
+        <p className={`subtitle is-5 ${theme.text1} has-text-weight-light summary-text`}>
           {Resume.basics.summary}
         </p>
         <div className="container interests">

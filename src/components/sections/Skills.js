@@ -1,6 +1,10 @@
 import React from "react";
 import SkillsList from "../elements/SkillsList";
 import Resume from "../../resume.json";
+import getTheme from '../../themeUtil'
+
+const theme = getTheme()
+
 
 function Skills() {
   return (
@@ -10,7 +14,7 @@ function Skills() {
         <div className="columns">
           <div className="my-3 column is-6">
             <div className="has-text-centered">
-              <span className="icon has-text-link">
+              <span className= {` icon ${theme.icon}`}>
                 <i className="fas fa-3x fa-cogs"></i>
               </span>
               <h2 className="title is-5">DevOps</h2>
@@ -19,7 +23,7 @@ function Skills() {
           </div>
           <div className="my-3 column is-6">
             <div className="has-text-centered">
-              <span className="icon has-text-link">
+              <span className= {` icon ${theme.icon}`}>
                 <i className="fas fa-3x fa-laptop-code"></i>
               </span>
               <h2 className="title is-5">Software Development</h2>
@@ -30,7 +34,7 @@ function Skills() {
         <div className="columns">
           <div className="my-3 column is-6">
             <div className="has-text-centered">
-              <span className="icon has-text-link">
+              <span className= {` icon ${theme.icon}`}>
                 <i className="fas fa-3x fa-bug"></i>
               </span>
               <h2 className="title is-5">Testing</h2>
@@ -39,7 +43,7 @@ function Skills() {
           </div>
           <div className="my-3 column is-6">
             <div className="has-text-centered">
-              <span className="icon has-text-link">
+              <span className= {` icon ${theme.icon}`}>
               <i class="fas fa-3x fa-briefcase"></i>
               </span>
               <h2 className="title is-5">Tools And Technologies</h2>
