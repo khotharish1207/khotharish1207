@@ -8,6 +8,18 @@ const setTheme = (theme) => {
   window.location.reload();
 };
 
+const getThemeDropdownItems = () => {
+  const themes = [];
+  for (let i = 1; i <= 6; i++) {
+    themes.push(
+      <div onClick={() => setTheme(`theme${i}`)} class="dropdown-item pointer">
+        {`Theme ${i}`}
+      </div>
+    );
+  }
+  return themes;
+};
+
 function Footer() {
   return (
     <footer className={`footer ${theme.backgroundClass}`}>
@@ -19,7 +31,7 @@ function Footer() {
           </a>
         </p>
       </div>
-      <div class="dropdown is-hoverable">
+      <div class="dropdown is-hoverable is-up">
         <div class="dropdown-trigger">
           <button
             class="button"
@@ -34,18 +46,7 @@ function Footer() {
         </div>
         <div class="dropdown-menu" id="dropdown-menu3" role="menu">
           <div class="dropdown-content">
-            <div
-              onClick={() => setTheme("theme1")}
-              class="dropdown-item pointer"
-            >
-              Theme 1
-            </div>
-            <div
-              onClick={() => setTheme("theme2")}
-              class="dropdown-item pointer"
-            >
-              Theme 2
-            </div>
+            {getThemeDropdownItems()}
           </div>
         </div>
       </div>
