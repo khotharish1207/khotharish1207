@@ -1,6 +1,8 @@
 import React from "react";
 import TimelineItem from "./TimelineItem";
 import Resume from "../../resume.json";
+import getTheme from "../../themeUtil";
+const theme = getTheme();
 
 function Timeline() {
   return (
@@ -10,7 +12,7 @@ function Timeline() {
           {new Date().getFullYear()}
         </span>
       </header>
-      <div className="timeline-item">
+      <div className={`timeline-item ${theme.timeLine}`}s>
         <div className="timeline-marker is-success"></div>
         <div className="timeline-content"></div>
       </div>

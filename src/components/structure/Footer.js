@@ -1,7 +1,8 @@
 import React from "react";
-import getTheme from "../../themeUtil";
+import getTheme, { theme as allThemes } from "../../themeUtil";
 
 const theme = getTheme();
+
 const setTheme = (theme) => {
   localStorage.setItem("myTheme", theme);
   alert("Theme update. Please relaod");
@@ -12,7 +13,12 @@ const getThemeDropdownItems = () => {
   const themes = [];
   for (let i = 1; i <= 6; i++) {
     themes.push(
-      <div onClick={() => setTheme(`theme${i}`)} class="dropdown-item pointer">
+      <div
+        onClick={() => setTheme(`theme${i}`)}
+        class={`dropdown-item pointer ${
+          allThemes[`theme${i}`].backgroundClass
+        }`}
+      >
         {`Theme ${i}`}
       </div>
     );
@@ -38,16 +44,14 @@ function Footer() {
             aria-haspopup="true"
             aria-controls="dropdown-menu3"
           >
-            <span>Chnage Theme</span>
+            <span>Change Theme</span>
             <span class="icon is-small">
               <i class="fas fa-angle-down" aria-hidden="true"></i>
             </span>
           </button>
         </div>
         <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-          <div class="dropdown-content">
-            {getThemeDropdownItems()}
-          </div>
+          <div class="dropdown-content">{getThemeDropdownItems()}</div>
         </div>
       </div>
     </footer>
