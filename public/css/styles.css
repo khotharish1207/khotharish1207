@@ -48,3 +48,28 @@ html {
 .pointer {
   cursor: pointer;
 }
+
+.margin-auto {
+  margin: auto;
+}
+
+.language-color {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  margin-right: 0.25rem;
+  border-radius: 100%;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem 1rem;
+}
+
+@media (max-width: 768px) {
+
+  .repo-cards-div-main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

@@ -12,6 +12,9 @@ function Skills() {
       <div className="container">
         <h1 className="title">Skills</h1>
         <div className="columns">
+          <img className="margin-auto" src="./images/skills.gif" alt="skills" />
+        </div>
+        <div className="columns">
           <div className="my-3 column is-6">
             <div className="has-text-centered">
               <span className= {` icon ${theme.icon}`}>
