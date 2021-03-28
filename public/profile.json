@@ -24,7 +24,7 @@
           {
             "node": {
               "name": "react-redux-saga",
-              "description": null,
+              "description": "The Create-react-app is used to get initial structure. It will adapt all CRA related things. demo: https://react-redux-saga-hk.herokuapp.com/",
               "forkCount": 0,
               "stargazers": { "totalCount": 1 },
               "url": "https://github.com/khotharish1207/react-redux-saga",
@@ -60,7 +60,7 @@
           {
             "node": {
               "name": "redux-serve",
-              "description": null,
+              "description": "Smart CLI service to create store, actions, reducer and saga with dynamic options.",
               "forkCount": 0,
               "stargazers": { "totalCount": 0 },
               "url": "https://github.com/khotharish1207/redux-serve",
