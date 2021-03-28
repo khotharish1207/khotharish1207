@@ -15,7 +15,7 @@ class Articles extends Component {
 
   componentDidMount() {
     const devTo =
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khot.harish1207";
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@khot-harish1207";
 
     fetch(devTo)
       .then((response) => {
@@ -45,7 +45,7 @@ class Articles extends Component {
         this.setState({ articles: articles });
       });
 
-    fetch("/profile.json")
+    fetch("./profile.json")
       .then((result) => {
         if (result.ok) {
           return result.json();

@@ -7,7 +7,7 @@
       "avatarUrl": "https://avatars.githubusercontent.com/u/16222560?u=101c08d8ded5c79f3e5a24d222307805de6afd00&v=4",
       "location": "Pune",
       "pinnedItems": {
-        "totalCount": 5,
+        "totalCount": 6,
         "edges": [
           {
             "node": {
@@ -55,6 +55,18 @@
               "id": "MDEwOlJlcG9zaXRvcnkzMzg1MzE3NDE=",
               "diskUsage": 242,
               "primaryLanguage": { "name": "CSS", "color": "#563d7c" }
+            }
+          },
+          {
+            "node": {
+              "name": "redux-serve",
+              "description": null,
+              "forkCount": 0,
+              "stargazers": { "totalCount": 0 },
+              "url": "https://github.com/khotharish1207/redux-serve",
+              "id": "MDEwOlJlcG9zaXRvcnkzNTIyMzYyNTQ=",
+              "diskUsage": 33,
+              "primaryLanguage": { "name": "JavaScript", "color": "#f1e05a" }
             }
           },
           {
