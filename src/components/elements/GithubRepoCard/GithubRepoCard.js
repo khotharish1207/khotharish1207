@@ -10,12 +10,11 @@ export default function GithubRepoCard({ repo }) {
 
   return (
     <div>
-      <div
-        className={"repo-card-div "}
-        key={repo.node.id}
-        onClick={() => openRepoinNewTab(repo.node.url)}
-      >
-        <div className="repo-name-div">
+      <div className={"repo-card-div "} key={repo.node.id}>
+        <div
+          className="repo-name-div"
+          onClick={() => openRepoinNewTab(repo.node.url)}
+        >
           <svg
             aria-hidden="true"
             className="octicon repo-svg"
@@ -34,6 +33,7 @@ export default function GithubRepoCard({ repo }) {
         <p style={{ minHeight: "3rem" }} className="summary-text">
           {repo.node.description}
         </p>
+        <br />
         <div className="repo-stats">
           <div className="repo-left-stat">
             {repo.node.primaryLanguage !== null && (

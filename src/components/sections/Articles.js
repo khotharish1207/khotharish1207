@@ -38,7 +38,7 @@ class Articles extends Component {
             </div>
           );
         });
-        var offset = 4 - data.length;
+        var offset = 3 - data.length;
         for (var i = 0; i < offset; i++) {
           articles.push(<div key={i + "_offset"} className="column"></div>);
         }
@@ -64,7 +64,7 @@ class Articles extends Component {
         <div className="container">
           <h1 className={`title ${theme.text2}`}>Articles</h1>
           <h2 className="subtitle is-4">My latest articles</h2>
-          <div className="columns">{this.state.articles}</div>
+          <div className="columns articles">{this.state.articles}</div>
         </div>
         <div className="container">
           <br />

@@ -1,114 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0"
-    />
-    <meta name="theme-color" content="#3273DC" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title></title>
-    <meta
-      name="description"
-      content="This is my personal website. You can find information about my experience, skills and articles I have written."
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="./css/bulma-timeline.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0" />
+  <meta name="theme-color" content="#3273DC" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title></title>
+  <meta name="description"
+    content="This is my personal website. You can find information about my experience, skills and articles I have written." />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon/favicon-16x16.png"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="./css/bulma-timeline.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.4.0/js/all.js"
-    ></script>
-    <script>
-      !(function () {
-        var analytics = (window.analytics = window.analytics || []);
-        if (!analytics.initialize)
-          if (analytics.invoked)
-            window.console &&
-              console.error &&
-              console.error("Segment snippet included twice.");
-          else {
-            analytics.invoked = !0;
-            analytics.methods = [
-              "trackSubmit",
-              "trackClick",
-              "trackLink",
-              "trackForm",
-              "pageview",
-              "identify",
-              "reset",
-              "group",
-              "track",
-              "ready",
-              "alias",
-              "debug",
-              "page",
-              "once",
-              "off",
-              "on",
-              "addSourceMiddleware",
-              "addIntegrationMiddleware",
-              "setAnonymousId",
-              "addDestinationMiddleware",
-            ];
-            analytics.factory = function (e) {
-              return function () {
-                var t = Array.prototype.slice.call(arguments);
-                t.unshift(e);
-                analytics.push(t);
-                return analytics;
-              };
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.4.0/js/all.js"></script>
+  <script>
+    !(function () {
+      var analytics = (window.analytics = window.analytics || []);
+      if (!analytics.initialize)
+        if (analytics.invoked)
+          window.console &&
+            console.error &&
+            console.error("Segment snippet included twice.");
+        else {
+          analytics.invoked = !0;
+          analytics.methods = [
+            "trackSubmit",
+            "trackClick",
+            "trackLink",
+            "trackForm",
+            "pageview",
+            "identify",
+            "reset",
+            "group",
+            "track",
+            "ready",
+            "alias",
+            "debug",
+            "page",
+            "once",
+            "off",
+            "on",
+            "addSourceMiddleware",
+            "addIntegrationMiddleware",
+            "setAnonymousId",
+            "addDestinationMiddleware",
+          ];
+          analytics.factory = function (e) {
+            return function () {
+              var t = Array.prototype.slice.call(arguments);
+              t.unshift(e);
+              analytics.push(t);
+              return analytics;
             };
-            for (var e = 0; e < analytics.methods.length; e++) {
-              var key = analytics.methods[e];
-              analytics[key] = analytics.factory(key);
-            }
-            analytics.load = function (key, e) {
-              var t = document.createElement("script");
-              t.type = "text/javascript";
-              t.async = !0;
-              t.src =
-                "https://cdn.segment.com/analytics.js/v1/" +
-                key +
-                "/analytics.min.js";
-              var n = document.getElementsByTagName("script")[0];
-              n.parentNode.insertBefore(t, n);
-              analytics._loadOptions = e;
-            };
-            analytics._writeKey = "vqVLpJvIDYs4KuM0Bm2qvIxfm5KIzCMh";
-            analytics.SNIPPET_VERSION = "4.13.2";
-            analytics.load("vqVLpJvIDYs4KuM0Bm2qvIxfm5KIzCMh");
-            analytics.page();
+          };
+          for (var e = 0; e < analytics.methods.length; e++) {
+            var key = analytics.methods[e];
+            analytics[key] = analytics.factory(key);
           }
-      })();
-    </script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+          analytics.load = function (key, e) {
+            var t = document.createElement("script");
+            t.type = "text/javascript";
+            t.async = !0;
+            t.src =
+              "https://cdn.segment.com/analytics.js/v1/" +
+              key +
+              "/analytics.min.js";
+            var n = document.getElementsByTagName("script")[0];
+            n.parentNode.insertBefore(t, n);
+            analytics._loadOptions = e;
+          };
+          analytics._writeKey = "vqVLpJvIDYs4KuM0Bm2qvIxfm5KIzCMh";
+          analytics.SNIPPET_VERSION = "4.13.2";
+          analytics.load("vqVLpJvIDYs4KuM0Bm2qvIxfm5KIzCMh");
+          analytics.page();
+        }
+    })();
+  </script>
+
+  <script data-ad-client="ca-pub-3037999123212209" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+
+<script type="text/javascript" src="./js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="./js/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+<script>
+
+  window.onload = function () {
+    /**
+ * [debounce description]
+ * @param  {[type]} func      [description]
+ * @param  {[type]} wait      [description]
+ * @param  {[type]} immediate [description]
+ * @return {[type]}           [description]
+ */
+    function debounce(func, wait, immediate) {
+      var timeout;
+      return function () {
+        var context = this,
+          args = arguments;
+        var later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    }
+    /**
+     * Match height
+     */
+
+    function matches() {
+      var classes = [ ".repo-card-div", ".card-header-title", ".article-card", ".card-image"]
+      classes.map(cl => $(cl).matchHeight())
+    }
+    matches()
+
+    var myEfficientFn = debounce(matches, 250);
+
+    window.addEventListener("resize", myEfficientFn);
+
+  }
+
+</script>
+
 </html>
