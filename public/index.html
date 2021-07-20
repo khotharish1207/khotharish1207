@@ -122,7 +122,7 @@
 
     function matches() {
       var classes = [".repo-card-div", ".card-header-title", ".article-card", ".card-image"]
-      classes.map(cl => $(cl).matchHeight())
+      classes.map(cl => {$(cl).matchHeight()})
     }
     matches()
 

@@ -82,8 +82,6 @@ function Footer() {
     document.body.removeChild(element);
   };
 
-  console.log(!email, error.email, !phone, error.phone);
-
   return (
     <div>
       <footer className={`footer ${theme.backgroundClass}`}>

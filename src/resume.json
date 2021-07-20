@@ -34,10 +34,18 @@
   },
   "work": [
     {
+      "company": "HSBC",
+      "position": "Senior Software Engineer",
+      "startDate": "2021-07-14",
+      "endDate": "",
+      "summary": "I am working Front-end developer with React.js and responsible fot creating common components.",
+      "highlights": []
+    },
+    {
       "company": "SAS",
       "position": "Senior Software Engineer",
       "startDate": "2019-06-18",
-      "endDate": "",
+      "endDate": "2021-07-06",
       "summary": "I am working Front-end developer with openUI5, React JS framework. I am also part of devops team, responsible for managing shared cluster",
       "highlights": []
     },
